@@ -1,7 +1,6 @@
 #ifndef UNITTEST_DEFERREDTESTRESULT_H
 #define UNITTEST_DEFERREDTESTRESULT_H
 
-#include "Config.h"
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "HelperMacros.h"

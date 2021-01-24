@@ -1,3 +1,4 @@
+#include "UnitTest++.h"
 #include "AssertException.h"
 
 #ifndef UNITTEST_NO_EXCEPTIONS
@@ -147,7 +148,6 @@ namespace UnitTest {
    }
 
 }
-#include "Config.h"
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "DeferredTestReporter.h"
@@ -180,7 +180,7 @@ DeferredTestReporter::DeferredTestResultList& DeferredTestReporter::GetResults()
 }
 
 #endif
-#include "Config.h"
+
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "DeferredTestResult.h"
@@ -556,7 +556,6 @@ namespace UnitTest {
    }
 }
 
-#include "Config.h"
 #include "Test.h"
 #include "TestList.h"
 #include "TestResults.h"
@@ -937,7 +936,6 @@ namespace UnitTest {
    }
 
 }
-#include "Config.h"
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "XmlTestReporter.h"

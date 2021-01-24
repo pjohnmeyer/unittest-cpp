@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTestPP.h"
+#include "UnitTest++/UnitTest++.h"
 
 int main(int, char const *[])
 {

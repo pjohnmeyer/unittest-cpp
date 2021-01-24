@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTestPP.h"
+#include "UnitTest++/UnitTest++.h"
 #include "UnitTest++/CurrentTest.h"
 #include "RecordingReporter.h"
 #include "ScopedCurrentTest.h"
@@ -20,7 +20,7 @@ namespace {
    static std::string testName;
    static bool next = false;
    static int line = 0;
-   
+
    // Use destructor to reset our globals
    struct DoValidationOn
    {
@@ -29,14 +29,14 @@ namespace {
          testName = "";
          next = false;
          line = 0;
-         
+
          reporter.lastFailedLine = 0;
          memset(reporter.lastFailedTest, 0, sizeof(reporter.lastFailedTest));
          memset(reporter.lastFailedSuite, 0, sizeof(reporter.lastFailedSuite));
          memset(reporter.lastFailedFile, 0, sizeof(reporter.lastFailedFile));
       }
    };
-   
+
    TEST(RequireCheckSucceedsOnTrue)
    {
       {
@@ -80,7 +80,7 @@ namespace {
             CHECK(true);
             CHECK_EQUAL(1,1);
          }
-         
+
          next = true;
       }
    }
@@ -101,7 +101,7 @@ namespace {
             CHECK(true);
             CHECK_EQUAL(1,2);
          }
-         
+
          next = true;
       }
    }
@@ -129,13 +129,13 @@ namespace {
    {
       CHECK(!next);
    }
-   
+
    TEST(FailureReportsCorrectTestName)
    {
       {
          UnitTest::TestResults testResults(&reporter);
          ScopedCurrentTest scopedResults(testResults);
-    
+
          testName = m_details.testName;
          REQUIRE CHECK(false);
       }
@@ -151,7 +151,7 @@ namespace {
       {
          UnitTest::TestResults testResults(&reporter);
          ScopedCurrentTest scopedResults(testResults);
-  
+
          testName = m_details.testName;
          const bool yaddayadda = false;
 
@@ -163,7 +163,7 @@ namespace {
    {
       CHECK(strstr(reporter.lastFailedMessage, "yaddayadda"));
    }
-   
+
    TEST(RequiredCheckEqualSucceedsOnEqual)
    {
       {
@@ -240,7 +240,7 @@ namespace {
       CHECK_EQUAL(1, g_sideEffect);
       CHECK(next);
    }
-   
+
    TEST(RequiredCheckEqualDoesNotHaveSideEffectsWhenFailing)
    {
       g_sideEffect = 0;
@@ -309,10 +309,10 @@ namespace {
       CHECK_EQUAL("suite", reporter.lastFailedSuite);
       CHECK_EQUAL("filename", reporter.lastFailedFile);
       CHECK_EQUAL(line, reporter.lastFailedLine);
-      
+
       CHECK(!next);
    }
-   
+
    TEST(RequiredCheckCloseDoesNotHaveSideEffectsWhenPassing)
    {
       g_sideEffect = 0;
@@ -324,7 +324,7 @@ namespace {
          next = true;
       }
    }
-   
+
    TEST_FIXTURE(DoValidationOn, RequiredCheckCloseDoesNotHaveSideEffectsWhenPassing_FollowOn)
    {
       CHECK_EQUAL(1, g_sideEffect);
@@ -365,7 +365,7 @@ namespace {
    {
       CHECK(next);
    }
-   
+
    TEST(RequiredCheckArrayCloseFailsOnNotEqual)
    {
       {
@@ -384,7 +384,7 @@ namespace {
    {
       CHECK(!next);
    }
-   
+
    TEST(RequiredCheckArrayCloseFailureIncludesCheckExpectedAndActual)
    {
       {
@@ -402,11 +402,11 @@ namespace {
    TEST_FIXTURE(DoValidationOn, RequiredCheckArrayCloseFailureIncludesCheckExpectedAndActual_FollowOn)
    {
       CHECK(!next);
-      
+
       CHECK(strstr(reporter.lastFailedMessage, "xpected [ 0 1 2 3 ]"));
       CHECK(strstr(reporter.lastFailedMessage, "was [ 0 1 3 3 ]"));
    }
-   
+
    TEST(RequiredCheckArrayCloseFailureContainsCorrectDetails)
    {
       {
@@ -425,13 +425,13 @@ namespace {
    TEST_FIXTURE(DoValidationOn, RequiredCheckArrayCloseFailureContainsCorrectDetails_FollowOn)
    {
       CHECK(!next);
-      
+
       CHECK_EQUAL("arrayCloseTest", reporter.lastFailedTest);
       CHECK_EQUAL("arrayCloseSuite", reporter.lastFailedSuite);
       CHECK_EQUAL("filename", reporter.lastFailedFile);
       CHECK_EQUAL(line, reporter.lastFailedLine);
    }
-   
+
    TEST(RequiredCheckArrayCloseFailureIncludesTolerance)
    {
       {
@@ -451,7 +451,7 @@ namespace {
       CHECK(!next);
       CHECK(strstr(reporter.lastFailedMessage, "0.01"));
    }
-   
+
    TEST(RequiredCheckArrayEqualSuceedsOnEqual)
    {
       {
@@ -469,7 +469,7 @@ namespace {
    {
       CHECK(next);
    }
-   
+
    TEST(RequiredCheckArrayEqualFailsOnNotEqual)
    {
       {
@@ -483,7 +483,7 @@ namespace {
          next = true;
       }
    }
-   
+
    TEST_FIXTURE(DoValidationOn, RequiredCheckArrayEqualFailsOnNotEqual)
    {
       CHECK(!next);
@@ -502,11 +502,11 @@ namespace {
          next = true;
       }
    }
-   
+
    TEST_FIXTURE(DoValidationOn, RequiredCheckArrayEqualFailureIncludesCheckExpectedAndActual_FollowOn)
    {
       CHECK(!next);
-      
+
       CHECK(strstr(reporter.lastFailedMessage, "xpected [ 0 1 2 3 ]"));
       CHECK(strstr(reporter.lastFailedMessage, "was [ 0 1 3 3 ]"));
    }
@@ -524,11 +524,11 @@ namespace {
          next = true;
       }
    }
-   
+
    TEST_FIXTURE(DoValidationOn, RequiredCheckArrayEqualFailureContainsCorrectInfo_FollowOn)
    {
       CHECK(!next);
-      
+
       CHECK_EQUAL("RequiredCheckArrayEqualFailureContainsCorrectInfo", reporter.lastFailedTest);
       CHECK_EQUAL(__FILE__, reporter.lastFailedFile);
       CHECK_EQUAL(line, reporter.lastFailedLine);
@@ -574,7 +574,7 @@ namespace {
          next = true;
       }
    }
-   
+
    TEST_FIXTURE(DoValidationOn, RequiredCheckArrayCloseDoesNotHaveSideEffectsWhenFailing_FollowOn)
    {
       CHECK_EQUAL(1, g_sideEffect);
@@ -598,7 +598,7 @@ namespace {
    {
       CHECK(next);
    }
-   
+
    TEST(RequiredCheckArray2DCloseFailsOnNotEqual)
    {
       {
@@ -617,7 +617,7 @@ namespace {
    {
       CHECK(!next);
    }
-   
+
    TEST(RequiredCheckArray2DCloseFailureIncludesCheckExpectedAndActual)
    {
       {
@@ -635,11 +635,11 @@ namespace {
    TEST_FIXTURE(DoValidationOn, RequiredCheckArray2DCloseFailureIncludesCheckExpectedAndActual_FollowOn)
    {
       CHECK(!next);
-      
+
       CHECK(strstr(reporter.lastFailedMessage, "xpected [ [ 0 1 ] [ 2 3 ] ]"));
       CHECK(strstr(reporter.lastFailedMessage, "was [ [ 0 1 ] [ 3 3 ] ]"));
    }
-   
+
    TEST(RequiredCheckArray2DCloseFailureContainsCorrectDetails)
    {
       {
@@ -658,13 +658,13 @@ namespace {
    TEST_FIXTURE(DoValidationOn, RequiredCheckArray2DCloseFailureContainsCorrectDetails_FollowOn)
    {
       CHECK(!next);
-      
+
       CHECK_EQUAL("array2DCloseTest", reporter.lastFailedTest);
       CHECK_EQUAL("array2DCloseSuite", reporter.lastFailedSuite);
       CHECK_EQUAL("filename", reporter.lastFailedFile);
       CHECK_EQUAL(line, reporter.lastFailedLine);
    }
-   
+
    TEST(RequiredCheckArray2DCloseFailureIncludesTolerance)
    {
       {
@@ -684,7 +684,7 @@ namespace {
       CHECK(!next);
       CHECK(strstr(reporter.lastFailedMessage, "0.01"));
    }
-   
+
    float const* const* FunctionWithSideEffects3()
    {
       ++g_sideEffect;
@@ -707,7 +707,7 @@ namespace {
          next = true;
       }
    }
-   
+
    TEST_FIXTURE(DoValidationOn, RequiredCheckArray2DCloseDoesNotHaveSideEffectsWhenPassing_FollowOn)
    {
       CHECK(next);

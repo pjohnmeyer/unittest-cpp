@@ -1,5 +1,5 @@
 #include "UnitTest++/Config.h"
-#include "UnitTest++/UnitTestPP.h"
+#include "UnitTest++/UnitTest++.h"
 
 #include "UnitTest++/ReportAssert.h"
 #include "UnitTest++/ReportAssertImpl.h"

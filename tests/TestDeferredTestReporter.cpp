@@ -2,7 +2,7 @@
 
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
-#include "UnitTest++/UnitTestPP.h"
+#include "UnitTest++/UnitTest++.h"
 #include "UnitTest++/DeferredTestReporter.h"
 #include <cstring>
 

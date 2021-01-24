@@ -1,7 +1,6 @@
 #ifndef UNITTEST_TIMEHELPERS_H
 #define UNITTEST_TIMEHELPERS_H
 
-#include "../Config.h"
 #include "../HelperMacros.h"
 
 #ifdef UNITTEST_MINGW

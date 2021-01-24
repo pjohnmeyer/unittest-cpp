@@ -1,8 +1,6 @@
 #ifndef UNITTEST_EXCEPTIONMACROS_H
 #define UNITTEST_EXCEPTIONMACROS_H
 
-#include "Config.h"
-
 #ifndef UNITTEST_NO_EXCEPTIONS
    #define UNITTEST_IMPL_TRY(x) try x
    #define UNITTEST_IMPL_THROW(x) throw x

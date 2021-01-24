@@ -1,7 +1,6 @@
 #ifndef UNITTEST_REPORTASSERTIMPL_H
 #define UNITTEST_REPORTASSERTIMPL_H
 
-#include "Config.h"
 #include "HelperMacros.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS

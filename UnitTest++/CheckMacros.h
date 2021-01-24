@@ -176,7 +176,7 @@
    #endif
 #endif
 
-// CHECK_THROW and CHECK_ASSERT only exist when UNITTEST_NO_EXCEPTIONS isn't defined (see config.h)
+// CHECK_THROW and CHECK_ASSERT only exist when UNITTEST_NO_EXCEPTIONS isn't defined
 #ifndef UNITTEST_NO_EXCEPTIONS
 
 #define UNITTEST_CHECK_THROW(expression, ExpectedExceptionType)                                                                                                                                      \

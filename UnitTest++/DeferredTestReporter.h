@@ -1,8 +1,6 @@
 #ifndef UNITTEST_DEFERREDTESTREPORTER_H
 #define UNITTEST_DEFERREDTESTREPORTER_H
 
-#include "Config.h"
-
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "TestReporter.h"

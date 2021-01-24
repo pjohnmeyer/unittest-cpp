@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTestPP.h"
+#include "UnitTest++/UnitTest++.h"
 
 #include "UnitTest++/MemoryOutStream.h"
 #include <cstring>

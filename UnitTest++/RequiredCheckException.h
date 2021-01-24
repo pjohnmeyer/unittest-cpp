@@ -1,7 +1,6 @@
 #ifndef UNITTEST_REQUIREDCHECKEXCEPTION_H
 #define UNITTEST_REQUIREDCHECKEXCEPTION_H
 
-#include "Config.h"
 #ifndef UNITTEST_NO_EXCEPTIONS
 
 #include "HelperMacros.h"

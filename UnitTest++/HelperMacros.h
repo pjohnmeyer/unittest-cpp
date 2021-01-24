@@ -1,8 +1,6 @@
 #ifndef UNITTEST_HELPERMACROS_H
 #define UNITTEST_HELPERMACROS_H
 
-#include "Config.h"
-
 #define UNITTEST_MULTILINE_MACRO_BEGIN do {
 
 #if defined(UNITTEST_WIN32) && !defined(UNITTEST_COMPILER_IS_MSVC6)

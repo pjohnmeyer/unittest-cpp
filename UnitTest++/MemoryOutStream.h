@@ -1,7 +1,6 @@
 #ifndef UNITTEST_MEMORYOUTSTREAM_H
 #define UNITTEST_MEMORYOUTSTREAM_H
 
-#include "Config.h"
 #include "HelperMacros.h"
 
 #ifdef UNITTEST_MEMORYOUTSTREAM_IS_STD_OSTRINGSTREAM
