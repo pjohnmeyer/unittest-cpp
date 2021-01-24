@@ -83,4 +83,13 @@
 
 #endif
 
+// TODO: THIS SHOULD BE IN THE STANDARD UTPP NAMESPACE
+namespace UnitTestSuite
+{
+   inline char const* GetSuiteName ()
+   {
+      return "DefaultSuite";
+   }
+}
+
 #include "UnitTestPP.h"
