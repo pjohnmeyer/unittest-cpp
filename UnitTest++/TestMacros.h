@@ -1,7 +1,6 @@
 #ifndef UNITTEST_TESTMACROS_H
 #define UNITTEST_TESTMACROS_H
 
-#include "ExceptionMacros.h"
 #include "ExecuteTest.h"
 #include "AssertException.h"
 #include "TestDetails.h"

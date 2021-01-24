@@ -81,6 +81,18 @@
 
 // #define UNITTEST_DISABLE_SHORT_MACROS
 
+#ifndef UNITTEST_NO_EXCEPTIONS
+   #define UNITTEST_IMPL_TRY(x) try x
+   #define UNITTEST_IMPL_THROW(x) throw x
+   #define UNITTEST_IMPL_RETHROW(ExceptionType) catch(ExceptionType&) { throw; }
+   #define UNITTEST_IMPL_CATCH(ExceptionType, ExceptionName, CatchBody) catch(ExceptionType& ExceptionName) CatchBody
+   #define UNITTEST_IMPL_CATCH_ALL(CatchBody) catch(...) CatchBody
+#else
+   #define UNITTEST_IMPL_TRY(x) x
+   #define UNITTEST_IMPL_THROW(x)
+   #define UNITTEST_IMPL_RETHROW(ExceptionType)
+   #define UNITTEST_IMPL_CATCH(ExceptionType, ExceptionName, CatchBody)
+   #define UNITTEST_IMPL_CATCH_ALL(CatchBody)
 #endif
 
 // TODO: THIS SHOULD BE IN THE STANDARD UTPP NAMESPACE
@@ -91,5 +103,7 @@ namespace UnitTestSuite
       return "DefaultSuite";
    }
 }
+
+#endif
 
 #include "UnitTestPP.h"

@@ -2,7 +2,6 @@
 #define UNITTEST_CHECKMACROS_H
 
 #include "HelperMacros.h"
-#include "ExceptionMacros.h"
 #include "Checks.h"
 #include "AssertException.h"
 #include "RequiredCheckException.h"
