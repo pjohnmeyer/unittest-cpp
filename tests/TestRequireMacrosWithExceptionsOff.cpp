@@ -1,5 +1,6 @@
 #include "../UnitTest++/UnitTest++.h"
 #include "RecordingReporter.h"
+#include "ScopedCurrentTest.h"
 
 #include <cstring>
 

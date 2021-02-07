@@ -64,7 +64,7 @@
       UNITTEST_IMPL_TRY                                                                                                             \
          ({                                                                                                              \
          Fixture ## Name ## Helper fixtureHelper(m_details);                                                             \
-         ctorOk = true;                                                                                                  \
+         ctorOk = ctorOk || true; /* || prevents unused var warning in no except builds */                               \
          UnitTest::ExecuteTest(fixtureHelper, m_details, false);                                                         \
       })                                                                                                                 \
       UNITTEST_IMPL_CATCH (UnitTest::AssertException, e,                                                                            \
