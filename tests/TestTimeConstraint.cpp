@@ -1,5 +1,4 @@
 #include "../UnitTest++/UnitTest++.h"
-#include "../UnitTest++/TestResults.h"
 #include "../UnitTest++/TimeHelpers.h"
 #include "RecordingReporter.h"
 #include "ScopedCurrentTest.h"

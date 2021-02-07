@@ -444,7 +444,6 @@ namespace UnitTest {
 #include "ReportAssertImpl.h"
 #include "AssertException.h"
 #include "CurrentTest.h"
-#include "TestResults.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
    #include "ReportAssertImpl.h"
@@ -530,7 +529,6 @@ namespace UnitTest {
 #include "RequiredCheckTestReporter.h"
 
 #include "CurrentTest.h"
-#include "TestResults.h"
 
 namespace UnitTest {
 
@@ -556,7 +554,6 @@ namespace UnitTest {
 
 #include "Test.h"
 #include "TestList.h"
-#include "TestResults.h"
 #include "AssertException.h"
 #include "MemoryOutStream.h"
 #include "ExecuteTest.h"
@@ -701,7 +698,6 @@ namespace UnitTest {
    }
 
 }
-#include "TestResults.h"
 #include "TestReporter.h"
 
 
@@ -760,7 +756,6 @@ namespace UnitTest {
 
 }
 #include "TestRunner.h"
-#include "TestResults.h"
 #include "TestReporter.h"
 #include "TestReporterStdout.h"
 #include "TimeHelpers.h"
@@ -903,7 +898,6 @@ namespace UnitTest {
 
 }
 #include "TimeConstraint.h"
-#include "TestResults.h"
 #include "MemoryOutStream.h"
 #include "CurrentTest.h"
 

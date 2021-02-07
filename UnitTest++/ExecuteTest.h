@@ -1,7 +1,6 @@
 #ifndef UNITTEST_EXECUTE_TEST_H
 #define UNITTEST_EXECUTE_TEST_H
 
-#include "TestResults.h"
 #include "MemoryOutStream.h"
 #include "AssertException.h"
 #include "RequiredCheckException.h"

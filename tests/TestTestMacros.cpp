@@ -1,7 +1,6 @@
 #include "../UnitTest++/UnitTest++.h"
 #include "../UnitTest++/TestMacros.h"
 #include "../UnitTest++/TestList.h"
-#include "../UnitTest++/TestResults.h"
 #include "../UnitTest++/TestReporter.h"
 #include "../UnitTest++/ReportAssert.h"
 #include "RecordingReporter.h"
