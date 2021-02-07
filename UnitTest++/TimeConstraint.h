@@ -2,8 +2,6 @@
 #define UNITTEST_TIMECONSTRAINT_H
 
 #include "TimeHelpers.h"
-#include "HelperMacros.h"
-#include "TestDetails.h"
 
 namespace UnitTest {
 

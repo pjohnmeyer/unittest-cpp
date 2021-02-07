@@ -3,7 +3,6 @@
 
 #ifndef UNITTEST_NO_EXCEPTIONS
 
-#include "HelperMacros.h"
 #include <exception>
 
 namespace UnitTest {

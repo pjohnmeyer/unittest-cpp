@@ -1,7 +1,6 @@
 #ifndef UNITTEST_TESTLIST_H
 #define UNITTEST_TESTLIST_H
 
-#include "HelperMacros.h"
 
 namespace UnitTest {
 

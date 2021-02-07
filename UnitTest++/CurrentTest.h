@@ -1,7 +1,6 @@
 #ifndef UNITTEST_CURRENTTESTRESULTS_H
 #define UNITTEST_CURRENTTESTRESULTS_H
 
-#include "HelperMacros.h"
 
 namespace UnitTest {
 

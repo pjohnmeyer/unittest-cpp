@@ -3,7 +3,6 @@
 
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
-#include "HelperMacros.h"
 #include <string>
 #include <vector>
 

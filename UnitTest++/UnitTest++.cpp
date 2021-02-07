@@ -151,7 +151,6 @@ namespace UnitTest {
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "DeferredTestReporter.h"
-#include "TestDetails.h"
 
 using namespace UnitTest;
 
@@ -446,7 +445,6 @@ namespace UnitTest {
 #include "AssertException.h"
 #include "CurrentTest.h"
 #include "TestResults.h"
-#include "TestDetails.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
    #include "ReportAssertImpl.h"
@@ -593,7 +591,6 @@ namespace UnitTest {
    {}
 
 }
-#include "TestDetails.h"
 
 namespace UnitTest {
 
@@ -664,7 +661,6 @@ namespace UnitTest {
 #include "TestReporterStdout.h"
 #include <cstdio>
 
-#include "TestDetails.h"
 
 // cstdio doesn't pull in namespace std on VC6, so we do it here.
 #if defined(UNITTEST_WIN32) && (_MSC_VER == 1200)
@@ -708,7 +704,6 @@ namespace UnitTest {
 #include "TestResults.h"
 #include "TestReporter.h"
 
-#include "TestDetails.h"
 
 namespace UnitTest {
 

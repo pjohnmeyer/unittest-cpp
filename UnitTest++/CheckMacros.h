@@ -1,12 +1,10 @@
 #ifndef UNITTEST_CHECKMACROS_H
 #define UNITTEST_CHECKMACROS_H
 
-#include "HelperMacros.h"
 #include "Checks.h"
 #include "AssertException.h"
 #include "RequiredCheckException.h"
 #include "MemoryOutStream.h"
-#include "TestDetails.h"
 #include "CurrentTest.h"
 #include "ReportAssertImpl.h"
 

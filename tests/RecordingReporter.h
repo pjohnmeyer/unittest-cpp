@@ -4,8 +4,6 @@
 #include "UnitTest++/TestReporter.h"
 #include <cstring>
 
-#include "UnitTest++/TestDetails.h"
-
 struct RecordingReporter : public UnitTest::TestReporter
 {
 private:

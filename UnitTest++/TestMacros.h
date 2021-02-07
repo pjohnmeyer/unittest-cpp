@@ -3,7 +3,6 @@
 
 #include "ExecuteTest.h"
 #include "AssertException.h"
-#include "TestDetails.h"
 #include "MemoryOutStream.h"
 
 #ifndef UNITTEST_POSIX

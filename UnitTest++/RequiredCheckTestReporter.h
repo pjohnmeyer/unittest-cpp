@@ -1,7 +1,6 @@
 #ifndef UNITTEST_REQUIRED_CHECK_TEST_REPORTER_H
 #define UNITTEST_REQUIRED_CHECK_TEST_REPORTER_H
 
-#include "HelperMacros.h"
 #include "ThrowingTestReporter.h"
 
 namespace UnitTest {
