@@ -1,6 +1,6 @@
 #define UNITTEST_DISABLE_SHORT_MACROS
 
-#include "UnitTest++/UnitTest++.h"
+#include "../UnitTest++/UnitTest++.h"
 
 // This file is not intended to test every little thing, just a few basics to hopefully ensure
 // the macros are working and the short macros are not defined.

@@ -1,9 +1,9 @@
-#include "UnitTest++/Config.h"
-#include "UnitTest++/UnitTest++.h"
+#include "../UnitTest++/Config.h"
+#include "../UnitTest++/UnitTest++.h"
 
-#include "UnitTest++/ReportAssert.h"
-#include "UnitTest++/ReportAssertImpl.h"
-#include "UnitTest++/AssertException.h"
+#include "../UnitTest++/ReportAssert.h"
+#include "../UnitTest++/ReportAssertImpl.h"
+#include "../UnitTest++/AssertException.h"
 
 #include "RecordingReporter.h"
 #include <csetjmp>

@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTest++.h"
+#include "../UnitTest++/UnitTest++.h"
 #include "RecordingReporter.h"
 
 #include <cstring>

@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTest++.h"
+#include "../UnitTest++/UnitTest++.h"
 #include "ScopedCurrentTest.h"
 
 // These are sample tests that show the different features of the framework
