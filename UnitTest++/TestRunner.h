@@ -3,7 +3,6 @@
 
 #include "Test.h"
 #include "TestList.h"
-#include "CurrentTest.h"
 
 namespace UnitTest {
 

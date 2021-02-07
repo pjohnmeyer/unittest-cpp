@@ -314,6 +314,19 @@ namespace UnitTest {
 
 #endif
 
+namespace UnitTest {
+
+   class TestResults;
+   class TestDetails;
+
+   namespace CurrentTest
+   {
+      UNITTEST_LINKAGE TestResults*& Results();
+      UNITTEST_LINKAGE const TestDetails*& Details();
+   }
+
+}
+
 #endif
 
 #include "UnitTestPP.h"

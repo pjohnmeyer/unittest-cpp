@@ -2,7 +2,6 @@
 #define UNITTEST_CHECKMACROS_H
 
 #include "Checks.h"
-#include "CurrentTest.h"
 #include "ReportAssertImpl.h"
 
 #define UNITTEST_CHECK(value)                                      \

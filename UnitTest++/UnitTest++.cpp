@@ -129,7 +129,6 @@ namespace UnitTest {
    }
 
 }
-#include "CurrentTest.h"
 #include <cstddef>
 
 namespace UnitTest {
@@ -440,7 +439,6 @@ namespace UnitTest {
 #endif
 #include "ReportAssert.h"
 #include "ReportAssertImpl.h"
-#include "CurrentTest.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
    #include "ReportAssertImpl.h"
@@ -524,7 +522,6 @@ namespace UnitTest {
 #endif
 #include "RequiredCheckTestReporter.h"
 
-#include "CurrentTest.h"
 
 namespace UnitTest {
 
@@ -890,7 +887,6 @@ namespace UnitTest {
 
 }
 #include "TimeConstraint.h"
-#include "CurrentTest.h"
 
 namespace UnitTest {
 

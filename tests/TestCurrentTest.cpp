@@ -1,5 +1,4 @@
 #include "../UnitTest++/UnitTest++.h"
-#include "../UnitTest++/CurrentTest.h"
 #include "ScopedCurrentTest.h"
 
 namespace
