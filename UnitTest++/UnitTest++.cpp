@@ -517,7 +517,6 @@ namespace UnitTest {
 }
 
 #endif
-#include "RequiredCheckTestReporter.h"
 
 
 namespace UnitTest {

@@ -1,7 +1,6 @@
 #ifndef UNITTEST_REQUIREMACROS_H
 #define UNITTEST_REQUIREMACROS_H
 
-#include "RequiredCheckTestReporter.h"
 
 #define UNITTEST_REQUIRE for(UnitTest::RequiredCheckTestReporter decoratedReporter(*UnitTest::CurrentTest::Results()); decoratedReporter.Next(); )
 
