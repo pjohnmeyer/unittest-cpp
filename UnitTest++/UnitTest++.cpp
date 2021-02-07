@@ -818,7 +818,6 @@ namespace UnitTest {
    }
 
 }
-#include "ThrowingTestReporter.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
 #endif
