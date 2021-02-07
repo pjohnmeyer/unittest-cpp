@@ -1,7 +1,6 @@
 #ifndef UNITTEST_TIMECONSTRAINT_H
 #define UNITTEST_TIMECONSTRAINT_H
 
-#include "TimeHelpers.h"
 
 namespace UnitTest {
 

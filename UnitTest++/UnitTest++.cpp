@@ -735,7 +735,6 @@ namespace UnitTest {
 
 }
 #include "TestReporterStdout.h"
-#include "TimeHelpers.h"
 
 #include <cstring>
 
@@ -1071,7 +1070,6 @@ namespace UnitTest {
    }
 }
 
-#include "Posix/TimeHelpers.h"
 #include <unistd.h>
 
 namespace UnitTest {
@@ -1108,7 +1106,6 @@ namespace UnitTest {
 
 #ifdef UNITTEST_WIN32
 
-#include "Win32/TimeHelpers.h"
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
