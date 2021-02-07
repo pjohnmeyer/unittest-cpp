@@ -541,7 +541,6 @@ namespace UnitTest {
    }
 }
 
-#include "Test.h"
 #include "TestList.h"
 
 #ifdef UNITTEST_POSIX
@@ -595,7 +594,6 @@ namespace UnitTest {
 
 }
 #include "TestList.h"
-#include "Test.h"
 
 #include <cassert>
 
