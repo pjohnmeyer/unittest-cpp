@@ -3,7 +3,6 @@
 
 
 #ifdef UNITTEST_NO_EXCEPTIONS
-#include "ReportAssertImpl.h"
 #endif
 
 #ifdef UNITTEST_POSIX

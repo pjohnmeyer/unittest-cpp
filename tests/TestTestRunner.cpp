@@ -4,7 +4,6 @@
 #include "../UnitTest++/TestList.h"
 #include "../UnitTest++/TimeHelpers.h"
 #include "../UnitTest++/TimeConstraint.h"
-#include "../UnitTest++/ReportAssertImpl.h"
 
 using namespace UnitTest;
 

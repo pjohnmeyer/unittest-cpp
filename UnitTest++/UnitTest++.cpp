@@ -438,11 +438,9 @@ namespace UnitTest {
 
 #endif
 #include "ReportAssert.h"
-#include "ReportAssertImpl.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
-   #include "ReportAssertImpl.h"
-#endif
+   #endif
 
 namespace UnitTest {
 
@@ -829,7 +827,6 @@ namespace UnitTest {
 #include "ThrowingTestReporter.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
-#include "ReportAssertImpl.h"
 #endif
 
 namespace UnitTest {
