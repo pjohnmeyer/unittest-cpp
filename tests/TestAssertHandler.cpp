@@ -1,7 +1,6 @@
 #include "../UnitTest++/Config.h"
 #include "../UnitTest++/UnitTest++.h"
 
-#include "../UnitTest++/ReportAssert.h"
 
 #include "RecordingReporter.h"
 #include <csetjmp>

@@ -436,7 +436,6 @@ namespace UnitTest {
 
 
 #endif
-#include "ReportAssert.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
    #endif
