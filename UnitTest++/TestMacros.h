@@ -2,7 +2,6 @@
 #define UNITTEST_TESTMACROS_H
 
 #include "ExecuteTest.h"
-#include "AssertException.h"
 
 #ifndef UNITTEST_POSIX
 #define UNITTEST_THROW_SIGNALS_POSIX_ONLY

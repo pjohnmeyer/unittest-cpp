@@ -1,5 +1,4 @@
 #include "UnitTest++.h"
-#include "AssertException.h"
 
 #ifndef UNITTEST_NO_EXCEPTIONS
 
@@ -441,7 +440,6 @@ namespace UnitTest {
 #endif
 #include "ReportAssert.h"
 #include "ReportAssertImpl.h"
-#include "AssertException.h"
 #include "CurrentTest.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
@@ -553,7 +551,6 @@ namespace UnitTest {
 
 #include "Test.h"
 #include "TestList.h"
-#include "AssertException.h"
 #include "ExecuteTest.h"
 
 #ifdef UNITTEST_POSIX
