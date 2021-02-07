@@ -1,7 +1,6 @@
 #ifndef UNITTEST_CHECKMACROS_H
 #define UNITTEST_CHECKMACROS_H
 
-#include "Checks.h"
 
 #define UNITTEST_CHECK(value)                                      \
    UNITTEST_MULTILINE_MACRO_BEGIN                                                                                                     \

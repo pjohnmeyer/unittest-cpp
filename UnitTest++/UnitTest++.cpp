@@ -13,7 +13,6 @@ namespace UnitTest {
 }
 
 #endif
-#include "Checks.h"
 #include <cstring>
 
 namespace UnitTest {
