@@ -1,5 +1,4 @@
 #include "../UnitTest++/UnitTest++.h"
-#include "../UnitTest++/TestList.h"
 
 using namespace UnitTest;
 
