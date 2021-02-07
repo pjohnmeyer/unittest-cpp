@@ -1,7 +1,6 @@
 #include "../UnitTest++/UnitTest++.h"
 #include "RecordingReporter.h"
 #include "../UnitTest++/ReportAssert.h"
-#include "../UnitTest++/TimeConstraint.h"
 
 using namespace UnitTest;
 
