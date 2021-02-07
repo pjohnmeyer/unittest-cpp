@@ -4,7 +4,6 @@
 #include "Checks.h"
 #include "AssertException.h"
 #include "RequiredCheckException.h"
-#include "MemoryOutStream.h"
 #include "CurrentTest.h"
 #include "ReportAssertImpl.h"
 

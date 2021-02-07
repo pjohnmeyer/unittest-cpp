@@ -222,7 +222,6 @@ namespace UnitTest
 }
 
 #endif
-#include "MemoryOutStream.h"
 
 #ifdef UNITTEST_MEMORYOUTSTREAM_IS_STD_OSTRINGSTREAM
 
@@ -555,7 +554,6 @@ namespace UnitTest {
 #include "Test.h"
 #include "TestList.h"
 #include "AssertException.h"
-#include "MemoryOutStream.h"
 #include "ExecuteTest.h"
 
 #ifdef UNITTEST_POSIX
@@ -759,7 +757,6 @@ namespace UnitTest {
 #include "TestReporter.h"
 #include "TestReporterStdout.h"
 #include "TimeHelpers.h"
-#include "MemoryOutStream.h"
 
 #include <cstring>
 
@@ -898,7 +895,6 @@ namespace UnitTest {
 
 }
 #include "TimeConstraint.h"
-#include "MemoryOutStream.h"
 #include "CurrentTest.h"
 
 namespace UnitTest {

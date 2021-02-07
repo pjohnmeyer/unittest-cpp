@@ -1,7 +1,6 @@
 #ifndef UNITTEST_CHECKS_H
 #define UNITTEST_CHECKS_H
 
-#include "MemoryOutStream.h"
 
 namespace UnitTest {
 

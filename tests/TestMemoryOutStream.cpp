@@ -1,6 +1,5 @@
 #include "../UnitTest++/UnitTest++.h"
 
-#include "../UnitTest++/MemoryOutStream.h"
 #include <cstring>
 #include <cstdlib>
 #include <climits>
