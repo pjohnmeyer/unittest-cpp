@@ -62,7 +62,6 @@ namespace UnitTest {
 
 
 }
-#include "CompositeTestReporter.h"
 #include <cstddef>
 
 namespace UnitTest {
@@ -147,7 +146,6 @@ namespace UnitTest {
 }
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
-#include "DeferredTestReporter.h"
 
 using namespace UnitTest;
 
@@ -179,7 +177,6 @@ DeferredTestReporter::DeferredTestResultList& DeferredTestReporter::GetResults()
 
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
-#include "DeferredTestResult.h"
 #include <cstring>
 
 namespace UnitTest
@@ -634,7 +631,6 @@ namespace UnitTest {
    {}
 
 }
-#include "TestReporterStdout.h"
 #include <cstdio>
 
 
@@ -733,7 +729,6 @@ namespace UnitTest {
 
 
 }
-#include "TestReporterStdout.h"
 
 #include <cstring>
 
@@ -895,7 +890,6 @@ namespace UnitTest {
 }
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
-#include "XmlTestReporter.h"
 
 #include <iostream>
 #include <sstream>

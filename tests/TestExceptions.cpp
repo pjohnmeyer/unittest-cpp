@@ -1,4 +1,3 @@
-#include "../UnitTest++/Config.h"
 #ifndef UNITTEST_NO_EXCEPTIONS
 
 #include "../UnitTest++/UnitTest++.h"

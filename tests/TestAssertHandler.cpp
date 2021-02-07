@@ -1,4 +1,3 @@
-#include "../UnitTest++/Config.h"
 #include "../UnitTest++/UnitTest++.h"
 
 

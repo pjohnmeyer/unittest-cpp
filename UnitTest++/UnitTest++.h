@@ -1187,4 +1187,144 @@ namespace UnitTest {
 
 }
 
+namespace UnitTest {
+
+   class UNITTEST_LINKAGE TestReporterStdout : public TestReporter
+   {
+   private:
+      virtual void ReportTestStart(TestDetails const& test);
+      virtual void ReportFailure(TestDetails const& test, char const* failure);
+      virtual void ReportTestFinish(TestDetails const& test, float secondsElapsed);
+      virtual void ReportSummary(int totalTestCount, int failedTestCount, int failureCount, float secondsElapsed);
+   };
+
+}
+
+
+#ifndef UNITTEST_NO_DEFERRED_REPORTER
+
+#include <string>
+#include <vector>
+
+namespace UnitTest
+{
+
+   class UNITTEST_LINKAGE DeferredTestFailure
+   {
+   public:
+      DeferredTestFailure();
+      DeferredTestFailure(int lineNumber_, const char* failureStr_);
+
+      int lineNumber;
+      char failureStr[1024];
+   };
+
+}
+
+UNITTEST_STDVECTOR_LINKAGE(UnitTest::DeferredTestFailure);
+
+namespace UnitTest
+{
+
+   class UNITTEST_LINKAGE DeferredTestResult
+   {
+   public:
+      DeferredTestResult();
+      DeferredTestResult(char const* suite, char const* test);
+      ~DeferredTestResult();
+
+      std::string suiteName;
+      std::string testName;
+      std::string failureFile;
+
+      typedef std::vector< DeferredTestFailure > FailureVec;
+      FailureVec failures;
+
+      float timeElapsed;
+      bool failed;
+   };
+
+}
+
+#include <vector>
+
+UNITTEST_STDVECTOR_LINKAGE(UnitTest::DeferredTestResult);
+
+namespace UnitTest
+{
+
+   class UNITTEST_LINKAGE DeferredTestReporter : public TestReporter
+   {
+   public:
+      virtual void ReportTestStart(TestDetails const& details);
+      virtual void ReportFailure(TestDetails const& details, char const* failure);
+      virtual void ReportTestFinish(TestDetails const& details, float secondsElapsed);
+
+      typedef std::vector< DeferredTestResult > DeferredTestResultList;
+      DeferredTestResultList& GetResults();
+
+   private:
+      DeferredTestResultList m_results;
+   };
+
+}
+
+#include <iosfwd>
+
+namespace UnitTest
+{
+
+   class UNITTEST_LINKAGE XmlTestReporter : public DeferredTestReporter
+   {
+   public:
+      explicit XmlTestReporter(std::ostream& ostream);
+
+      virtual void ReportSummary(int totalTestCount, int failedTestCount, int failureCount, float secondsElapsed);
+
+   private:
+      XmlTestReporter(XmlTestReporter const&);
+      XmlTestReporter& operator=(XmlTestReporter const&);
+
+      void AddXmlElement(std::ostream& os, char const* encoding);
+      void BeginResults(std::ostream& os, int totalTestCount, int failedTestCount, int failureCount, float secondsElapsed);
+      void EndResults(std::ostream& os);
+      void BeginTest(std::ostream& os, DeferredTestResult const& result);
+      void AddFailure(std::ostream& os, DeferredTestResult const& result);
+      void EndTest(std::ostream& os, DeferredTestResult const& result);
+
+      std::ostream& m_ostream;
+   };
+
+}
+
+#endif
+
+namespace UnitTest {
+
+   class UNITTEST_LINKAGE CompositeTestReporter : public TestReporter
+   {
+   public:
+      CompositeTestReporter();
+
+      int GetReporterCount() const;
+      bool AddReporter(TestReporter* reporter);
+      bool RemoveReporter(TestReporter* reporter);
+
+      virtual void ReportTestStart(TestDetails const& test);
+      virtual void ReportFailure(TestDetails const& test, char const* failure);
+      virtual void ReportTestFinish(TestDetails const& test, float secondsElapsed);
+      virtual void ReportSummary(int totalTestCount, int failedTestCount, int failureCount, float secondsElapsed);
+
+   private:
+      enum { kMaxReporters = 16 };
+      TestReporter* m_reporters[kMaxReporters];
+      int m_reporterCount;
+
+      // revoked
+      CompositeTestReporter(const CompositeTestReporter&);
+      CompositeTestReporter& operator =(const CompositeTestReporter&);
+   };
+
+}
+
 #endif

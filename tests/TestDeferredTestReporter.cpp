@@ -1,9 +1,7 @@
-#include "../UnitTest++/Config.h"
 
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "../UnitTest++/UnitTest++.h"
-#include "../UnitTest++/DeferredTestReporter.h"
 #include <cstring>
 
 namespace UnitTest

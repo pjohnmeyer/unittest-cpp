@@ -1,8 +1,6 @@
-#include "../UnitTest++/Config.h"
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
 #include "../UnitTest++/UnitTest++.h"
-#include "../UnitTest++/XmlTestReporter.h"
 
 #include <sstream>
 
