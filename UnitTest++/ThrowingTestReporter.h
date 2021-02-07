@@ -1,7 +1,6 @@
 #ifndef UNITTEST_THROWINGTESTREPORTER_H
 #define UNITTEST_THROWINGTESTREPORTER_H
 
-#include "TestReporter.h"
 
 namespace UnitTest {
 

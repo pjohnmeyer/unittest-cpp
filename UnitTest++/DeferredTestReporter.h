@@ -3,7 +3,6 @@
 
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 
-#include "TestReporter.h"
 #include "DeferredTestResult.h"
 
 #include <vector>

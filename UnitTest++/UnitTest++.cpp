@@ -633,7 +633,6 @@ namespace UnitTest {
    }
 
 }
-#include "TestReporter.h"
 
 namespace UnitTest {
 
@@ -684,7 +683,6 @@ namespace UnitTest {
    }
 
 }
-#include "TestReporter.h"
 
 
 namespace UnitTest {
@@ -742,7 +740,6 @@ namespace UnitTest {
 
 }
 #include "TestRunner.h"
-#include "TestReporter.h"
 #include "TestReporterStdout.h"
 #include "TimeHelpers.h"
 
