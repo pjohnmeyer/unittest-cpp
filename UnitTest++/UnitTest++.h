@@ -301,6 +301,17 @@ namespace UnitTest {
 
 }
 
+namespace UnitTest {
+
+   class UNITTEST_LINKAGE RequiredCheckException : public std::exception
+   {
+   public:
+      RequiredCheckException();
+      virtual ~RequiredCheckException() throw();
+   };
+
+}
+
 #endif
 
 #endif

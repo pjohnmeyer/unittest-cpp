@@ -506,7 +506,6 @@ namespace UnitTest {
 
    }
 }
-#include "RequiredCheckException.h"
 
 #ifndef UNITTEST_NO_EXCEPTIONS
 
@@ -831,7 +830,6 @@ namespace UnitTest {
 
 }
 #include "ThrowingTestReporter.h"
-#include "RequiredCheckException.h"
 
 #ifdef UNITTEST_NO_EXCEPTIONS
 #include "ReportAssertImpl.h"
