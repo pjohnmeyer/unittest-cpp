@@ -6,7 +6,6 @@
 #ifndef UNITTEST_POSIX
 #define UNITTEST_THROW_SIGNALS_POSIX_ONLY
 #else
-#include "Posix/SignalTranslator.h"
 #endif
 
 #define UNITTEST_SUITE(Name)                  \

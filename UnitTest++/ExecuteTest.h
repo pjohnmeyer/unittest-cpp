@@ -1,14 +1,6 @@
 #ifndef UNITTEST_EXECUTE_TEST_H
 #define UNITTEST_EXECUTE_TEST_H
 
-
-#ifdef UNITTEST_NO_EXCEPTIONS
-#endif
-
-#ifdef UNITTEST_POSIX
-#include "Posix/SignalTranslator.h"
-#endif
-
 namespace UnitTest {
 
    template< typename T >

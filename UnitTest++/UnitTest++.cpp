@@ -548,7 +548,6 @@ namespace UnitTest {
 #include "ExecuteTest.h"
 
 #ifdef UNITTEST_POSIX
-#include "Posix/SignalTranslator.h"
 #endif
 
 namespace UnitTest {
@@ -1040,7 +1039,6 @@ namespace UnitTest {
 #endif
 
 #ifdef UNITTEST_POSIX
-#include "Posix/SignalTranslator.h"
 
 namespace UnitTest {
 
